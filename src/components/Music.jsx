@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import config from "./config"; // Import config file
 import MusicContext from "../context/MusicContext";
 
+
 // Dynamically import only the required music images
 const imageFiles = import.meta.glob("../assets/music/*.png");
 
@@ -15,14 +16,15 @@ function Music() {
   const [songs, setSongs] = useState([]);
   const containerRef = useRef(null);
 
+
   useEffect(() => {
-    const loadImages = async () => {
-      try {
-        const loadedImages = await Promise.all(
-          config.musicGallery.map(async (song, index) => {
-            const imagePath = `/${index + 1}.png`; // Update to point to the correct location
+const loadImages = async () => {
+  console.log("Loading images...");
 
-
+      const loadedImages = await Promise.all(
+        config.musicGallery
+          .map(async (song, index) => {
+            const imagePath = `../assets/music/${index + 1}.png`; // Ensure correct ordering from bottom to top
             if (imageFiles[imagePath]) {
               const imageModule = await imageFiles[imagePath]();
               return {
@@ -33,15 +35,13 @@ function Music() {
                 top: song.top || "0%",
               };
             }
-            return null;
-          })
-        );
+            console.error(`Image not found: ${imagePath}`);
+            return null; 
 
-        const validSongs = loadedImages.filter((song) => song !== null); // Remove null entries
-        setSongs(validSongs);
-      } catch (error) {
-        console.error("Error loading images:", error);
-      }
+          })
+      );
+
+      setSongs(loadedImages.filter((song) => song !== null)); // Remove null entries (missing images)
     };
 
     loadImages();
@@ -90,6 +90,8 @@ function Music() {
                 >
                   {isPlaying && currentSong === song.title ? 'Pause' : 'Play'}
                 </button>
+
+
               </div>
             </motion.div>
           ))}
