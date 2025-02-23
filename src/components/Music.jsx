@@ -20,7 +20,9 @@ function Music() {
       try {
         const loadedImages = await Promise.all(
           config.musicGallery.map(async (song, index) => {
-            const imagePath = `../assets/music/${index + 1}.png`; // Ensure correct ordering from bottom to top
+            const imagePath = `/${index + 1}.png`; // Update to point to the correct location
+
+
             if (imageFiles[imagePath]) {
               const imageModule = await imageFiles[imagePath]();
               return {

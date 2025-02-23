@@ -1,7 +1,8 @@
 const config = {
     recapTitle: "Recap",
     recapSections: [
-      { label: "Message", path: "/letter", icon: "Message" },
+      { label: "Message", path: "/recap/message", icon: "Message" },
+
       { label: "Image", path: "/recap/pictures", icon: "Image" },
       { label: "Music", path: "/recap/music", icon: "Music" },
     ],
@@ -13,4 +14,3 @@ const config = {
   };
   
   export default config;
-  
