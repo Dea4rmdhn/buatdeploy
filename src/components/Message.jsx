@@ -13,7 +13,9 @@ function Message() {
   const [pictures, setPictures] = useState([]);
 
   useEffect(() => {
-    const loadImages = async () => {
+  const loadImages = async () => {
+    try {
+
       const loadedImages = await Promise.all(
         Object.keys(imageFiles)
           .sort((a, b) => {
@@ -34,8 +36,14 @@ function Message() {
           })
       );
 
-      setPictures(loadedImages);
+      const validPictures = loadedImages.filter((picture) => picture !== null); // Remove null entries
+      setPictures(validPictures);
+
+    } catch (error) {
+        console.error("Error loading images:", error);
+    }
     };
+
 
     loadImages();
   }, []);

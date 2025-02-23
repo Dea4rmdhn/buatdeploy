@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import config from "./config"; // Import config file
 import MusicContext from "../context/MusicContext";
 
-
 // Dynamically import only the required music images
 const imageFiles = import.meta.glob("../assets/music/*.png");
 
@@ -16,12 +15,11 @@ function Music() {
   const [songs, setSongs] = useState([]);
   const containerRef = useRef(null);
 
-
   useEffect(() => {
     const loadImages = async () => {
-      const loadedImages = await Promise.all(
-        config.musicGallery
-          .map(async (song, index) => {
+      try {
+        const loadedImages = await Promise.all(
+          config.musicGallery.map(async (song, index) => {
             const imagePath = `../assets/music/${index + 1}.png`; // Ensure correct ordering from bottom to top
             if (imageFiles[imagePath]) {
               const imageModule = await imageFiles[imagePath]();
@@ -35,9 +33,13 @@ function Music() {
             }
             return null;
           })
-      );
+        );
 
-      setSongs(loadedImages.filter((song) => song !== null)); // Remove null entries (missing images)
+        const validSongs = loadedImages.filter((song) => song !== null); // Remove null entries
+        setSongs(validSongs);
+      } catch (error) {
+        console.error("Error loading images:", error);
+      }
     };
 
     loadImages();
@@ -86,8 +88,6 @@ function Music() {
                 >
                   {isPlaying && currentSong === song.title ? 'Pause' : 'Play'}
                 </button>
-
-
               </div>
             </motion.div>
           ))}
