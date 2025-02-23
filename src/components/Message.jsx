@@ -9,13 +9,11 @@ import config from './config';
 const imageFiles = import.meta.glob('../assets/MessageImage*.png');
 
 function Message() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const [pictures, setPictures] = useState([]);
 
   useEffect(() => {
-  const loadImages = async () => {
-    try {
-
+    const loadImages = async () => {
       const loadedImages = await Promise.all(
         Object.keys(imageFiles)
           .sort((a, b) => {
@@ -36,14 +34,8 @@ function Message() {
           })
       );
 
-      const validPictures = loadedImages.filter((picture) => picture !== null); // Remove null entries
-      setPictures(validPictures);
-
-    } catch (error) {
-        console.error("Error loading images:", error);
-    }
+      setPictures(loadedImages);
     };
-
 
     loadImages();
   }, []);
