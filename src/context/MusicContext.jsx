@@ -8,15 +8,22 @@ export const MusicProvider = ({ children }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentSong, setCurrentSong] = useState(null);
 
-  const playMusic = (songTitle) => {
+    const playMusic = (songTitle) => {
+        console.log(`Attempting to play: ${songTitle}`);
+
     if (soundRef.current && soundRef.current.playing()) {
       soundRef.current.pause();
     }
 
     if (!soundRef.current || currentSong !== songTitle) {
       const songPath = getSongPath(songTitle);
-      soundRef.current = new Howl({
+        soundRef.current = new Howl({
+            onloaderror: (id, error) => {
+                console.error('Failed to load audio:', error);
+            },
+
         src: [songPath],
+
         html5: true,
         onplay: () => {
           setIsPlaying(true);
@@ -36,17 +43,20 @@ export const MusicProvider = ({ children }) => {
 
   const getSongPath = (songTitle) => {
     const songMap = {
-      'Cleared': '/cleared.mp3',
-      'Duvet': '/Duvet.mp3',
-      'Flawed Mangoes': '/Flawed Mangoes.mp3',
-      'Broken': '/Broken.mp3',
-      'Be Happy': '/Be Happy.mp3',
-      'Sailor Song': '/Sailor Song.mp3',
-      'Teeth': '/teeth.mp3',
-      'Endless Travel': '/Endless Travel.mp3',
+      'Cleared': '/src/assets/music/cleared.mp3',
+      'Duvet': '/src/assets/music/Duvet.mp3',
+      'Flawed Mangoes' : '/src/assets/music/Flawed Mangoes.mp3',
+      'Broken' : '/src/assets/music/Broken.mp3',
+      'Be Happy': '/src/assets/music/Be Happy.mp3',
+      'Sailor Song': '/src/assets/music/Sailor Song.mp3',
+      'Teeth': '/src/assets/music/teeth.mp3',
+      'Endless Travel': '/src/assets/music/Endless Travel.mp3',
+
+
     };
-    return songMap[songTitle] || '/about you.mp3';
+    return songMap[songTitle] || '/src/assets/music/about you.mp3';
   };
+
 
   const pauseMusic = () => {
     if (soundRef.current && soundRef.current.playing()) {
@@ -56,9 +66,11 @@ export const MusicProvider = ({ children }) => {
 
   return (
     <MusicContext.Provider value={{ isPlaying, playMusic, pauseMusic, currentSong }}>
+
       {children}
     </MusicContext.Provider>
   );
 };
 
 export default MusicContext;
+
