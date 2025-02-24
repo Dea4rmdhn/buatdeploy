@@ -16,6 +16,10 @@
                     ".mp3": "audio/mpeg"
                 }
             }
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/index.html"
         }
     ],
     "mimeTypes": {
