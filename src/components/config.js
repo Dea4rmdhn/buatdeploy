@@ -115,7 +115,7 @@ const config = {
     // 📝 Message Recap Page
     messageTitle: "Messages for you", // Title for the messages recap page
     messageGallery: [
-      { title: "20 Februari, 2025", description: "Halo amass, tau gak sihh edek tu kangen weee, dah setaun gak ketemu gk siee wkwk canda. Amas harus happy terus yaaa... gabole sedih-sedih. Amas semangat terus yakk... edek bangga sama amas. Tapi, edek juga mau ingetin, jangan sampai lupa jaga kesehatan, ya. Istirahat yang cukup, makan yang teratur, kurangin ngambeknya dan kurang-kurangin ngerokoknya. Ingat ya, Amas itu berharga banget buat edek. Jadi, tolong jaga diri baik-baik, ya. Kalau ada apa-apa, jangan sungkan cerita sama edek. Edek selalu ada buat amas, no matter what . Oiyaaaaa  edek ngerasa belakangan ini kita agak kurang komunikasi karena punya kesibukan masing-masing. tapi edek harap kita bisa sama-sama luangin waktu walaupun bentar buat ngobrol kaya dulu lagi. Dah itu aja, bingung mo ngomong apa lagi. I Love You pokoknya 💖" }, 
+      { title: "20 Februari, 2025", description: "Halo amass, tau gak sihh edek tu kangen weee, kita dah setaun gak ketemu gk sieee wkwk canda 🤣. Edek berharap amas happy terus... gabole sedih-sedih dan harus semangat terus yakk... edek bangga sama amas. Edek juga mau ingetin, jangan sampai lupa jaga kesehatan, ya. Istirahat yang cukup, makan yang teratur, kurangin ngambeknya dan kurang-kurangin ngerokoknya. Ingat ya, Amas itu berharga banget buat edek. Jadi, tolong jaga diri baik-baik, ya. Kalau ada apa-apa, jangan sungkan cerita sama edek. Edek selalu ada buat amas, no matter what . Oiyaaaaa edek ngerasa belakangan ini kita agak kurang komunikasi karena punya kesibukan masing-masing. tapi edek harap kita bisa sama-sama luangin waktu walaupun bentar buat ngobrol kaya dulu lagi. Thank you for making my life a little crazier and a lot more fun! You’re the best!💖 oiyaaa maaf klo kemaren sempet bikin kesel gara-gara web-nya gabisa dibuka, tapi edek dah usahain biar amas bisa liat, semoga amas suka 🥹. Dah itu aja, bingung mo ngomong apa lagi. I Love You dah pokoknya 💖" }, 
       
       
     ],
@@ -123,22 +123,22 @@ const config = {
     // 📸 Picture Recap Page
     pictureTitle: "Our Pictures", // Title for the pictures recap page
     pictureGallery: [
-      { title: "Agustus 5, 2024", description: "A beautiful day to remember. Inget ngga pas pertama kali jalan bareng? lucu banget taukk suka senyum senyum sendiri kalo keinget. Pertama kali ketemu tapi dah berasa bestie dari lahir wkkwk. " }, // Picture entry
-      { title: "September 6, 2024", description: "pap after LDR 😎 masih malu-malu babi tapi kiyowoo sekaliiii" },
-      { title: "Desember 21, 2024", description: "akhirnya ketemuu setelah LDR lama yeayyyyy, luka dikit g ngaruh wkwk. Niatnya mo maen maen bareng di malang malah gajadi😭 Tapi gapapa, semua ada hikmahnya, gaperlu disesali" },
-      { title: "Desember 23, 2024", description: "First time naik kereta bareng aaaaa, biasannya sendiri mulu. luvv dah pokoknya" },
-      { title: "Desember 23, 2024", description: "senyumnyaaaaaa behhhh cakep banget wkwk" },
-      { title: "Desember 27, 2024", description: "Dianter berobat, Thank youuu sayangg. Gapernah diperhatiin segininya seneng bgt" },
-      { title: "Januari 4, 2025", description: "Nonton film dirumah, mam bareng dirumah, maen kocheng, banyak lah pokoknyaa dan selalu suka asal bareng amas ehehehe" },
-      { title: "Januari 21, 2025", description: "beli nasi goreng sebelum hujan dan sebelum huru hara rumah tangga wkwkw, pulang telat jadinya harus mendengarkan ceramah bapak" },
-      { title: "Januari 31, 2025", description: "lucu, gemes, gaada tandingan dahhh. the only one pokoknya" },
-      { title: "Januari 31, 2025", description: " kenangan pas malem sebelum amas balik" },
+      { title: "Agustus 5, 2024", description: "A beautiful day to remember. Inget ngga pas pertama kali jalan bareng? lucu banget taukk.. suka senyum senyum sendiri kalo keinget. Pertama kali ketemu tapi dah berasa bestfriend dari lahir wkkwk ❤️ " }, // Picture entry
+      { title: "September 6, 2024", description: "pap after LDR 😎 masih malu-malu babi, tapi kiyowoo bangett weee.. gemesss dahhh" },
+      { title: "Desember 21, 2024", description: "akhirnya ketemuu setelah LDR lama yeayyyyy, luka dikit g ngaruh yeee. Niatnya mo maen maen bareng di malang malah gajadi😭 Tapi gapapa, semua ada hikmahnya jadi gaperlu disesali" },
+      { title: "Desember 23, 2024", description: "First time naik kereta bareng.. uhuyyy, biasannya sendiri mulu kek orang ilang. Happy dah pokoknya ❤️" },
+      { title: "Desember 23, 2024", description: "senyumnyaaaaaa behhhh cakep banget cowo guwehhh wkwk" },
+      { title: "Desember 27, 2024", description: "Dianter berobat 😘 , Thank youuu sayanggg. Gapernah diperhatiin segininya 🥹 makasihhh" },
+      { title: "Januari 4, 2025", description: "Nonton film dirumah, mam bareng dirumah, maen kocheng, banyak lah pokoknyaa ehehe dan selalu suka asal bareng amas " },
+      { title: "Januari 21, 2025", description: "beli nasi goreng sebelum hujan dan sebelum huru hara rumah tangga wkwkw 🤣, gara-gara pulang telat jadinya harus mendengarkan ceramah bapak" },
+      { title: "Januari 31, 2025", description: "lucu, gemes, gaada tandingan dahhh. the only one pokoknya 🤩" },
+      { title: "Januari 31, 2025", description: " kenangan pas malem sebelum amas balik. aing ditinggalll 😭" },
       { title: "Februari 14, 2025", description: "mang bowleh selucu ini haaa? jangan lucu lucu siii nanti banyak yang suka" },
-      { title: "Januari 12, 2025", description: "peluk jauhhhhhh. With you, I am home" },
+      { title: "Januari 12, 2025", description: "peluk jauhhhhhh...You stole my heart, but I’ll let you keep it forever" },
       { title: "Januari 1, 2025", description :"anjayyyyy kedua kalinya kesini baru kesampean foto pas dah jadi pasangan wkwk" },
       { title: "Desember 28, 2024", description : "Tahun baru-an bareng keluarga. soo exciteddd. semoga tahun depan bisa kaya gini lagii" },
-      { title: "Januari 31, 2025", description: "ke alun-alun untuk ketiga kalinyaaa. with the same person" },
-      { title: "Februari 1, 2025", description: " foto bareng mbah kong yeayyyy...h-1 amas balik. Jujur sedih pas ditinggal tapi gapapa kita ketemu lagi secepatnya ya sayanggg. I love you more than words can say." },
+      { title: "Januari 31, 2025", description: "ke alun-alun untuk ketiga kalinyaaa. Makasih bunganyaa ❤️" },
+      { title: "Februari 1, 2025", description: " foto bareng mbah kong yeayyyy...h-1 amas balik. Jujur sedih pas ditinggal tapi gapapa kita ketemu lagi secepatnya ya sayanggg. Thank you for always being there for me. I appreciate you more than words can say ❤️" },
       
     ],
 
