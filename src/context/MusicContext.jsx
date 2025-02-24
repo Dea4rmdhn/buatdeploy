@@ -37,19 +37,21 @@ export const MusicProvider = ({ children }) => {
 
   const getSongPath = (songTitle) => {
     const songMap = {
-      'Cleared': '/music/cleared.mp3',
-      'Duvet': '/music/Duvet.mp3',
-      'Flawed Mangoes': '/music/Flawed Mangoes.mp3',
-      'Broken': '/music/Broken.mp3',
-      'Be Happy': '/music/Be Happy.mp3',
-      'Sailor Song': '/music/Sailor Song.mp3',
-      'Teeth': '/music/teeth.mp3',
-      'Endless Travel': '/music/Endless Travel.mp3',
+      'Cleared': '/cleared.mp3',
+      'Duvet': '/Duvet.mp3',
+      'Flawed Mangoes': '/Flawed Mangoes.mp3',
+      'Broken': '/Broken.mp3',
+      'Be Happy': '/Be Happy.mp3',
+      'Sailor Song': '/Sailor Song.mp3',
+      'Teeth': '/teeth.mp3',
+      'Endless Travel': '/Endless Travel.mp3',
+
 
 
 
     };
-    return songMap[songTitle] || '/music/about you.mp3';
+    return songMap[songTitle] || '/about you.mp3';
+
 
   };
 
