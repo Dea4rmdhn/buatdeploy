@@ -8,20 +8,14 @@ export const MusicProvider = ({ children }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentSong, setCurrentSong] = useState(null);
 
-    const playMusic = (songTitle) => {
-        console.log(`Attempting to play: ${songTitle}`);
-
+  const playMusic = (songTitle) => {
     if (soundRef.current && soundRef.current.playing()) {
       soundRef.current.pause();
     }
 
     if (!soundRef.current || currentSong !== songTitle) {
       const songPath = getSongPath(songTitle);
-        soundRef.current = new Howl({
-            onloaderror: (id, error) => {
-                console.error('Failed to load audio:', error);
-            },
-
+      soundRef.current = new Howl({
         src: [songPath],
 
         html5: true,
@@ -43,18 +37,20 @@ export const MusicProvider = ({ children }) => {
 
   const getSongPath = (songTitle) => {
     const songMap = {
-      'Cleared': '/src/assets/music/cleared.mp3',
-      'Duvet': '/src/assets/music/Duvet.mp3',
-      'Flawed Mangoes' : '/src/assets/music/Flawed Mangoes.mp3',
-      'Broken' : '/src/assets/music/Broken.mp3',
-      'Be Happy': '/src/assets/music/Be Happy.mp3',
-      'Sailor Song': '/src/assets/music/Sailor Song.mp3',
-      'Teeth': '/src/assets/music/teeth.mp3',
-      'Endless Travel': '/src/assets/music/Endless Travel.mp3',
+      'Cleared': '/music/cleared.mp3',
+      'Duvet': '/music/Duvet.mp3',
+      'Flawed Mangoes': '/music/Flawed Mangoes.mp3',
+      'Broken': '/music/Broken.mp3',
+      'Be Happy': '/music/Be Happy.mp3',
+      'Sailor Song': '/music/Sailor Song.mp3',
+      'Teeth': '/music/teeth.mp3',
+      'Endless Travel': '/music/Endless Travel.mp3',
+
 
 
     };
-    return songMap[songTitle] || '/src/assets/music/about you.mp3';
+    return songMap[songTitle] || '/music/about you.mp3';
+
   };
 
 
@@ -73,4 +69,3 @@ export const MusicProvider = ({ children }) => {
 };
 
 export default MusicContext;
-
