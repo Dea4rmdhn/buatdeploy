@@ -143,7 +143,7 @@ const config = {
     ],
 
   // 💌 Love Letter Page
-  loveLetterMessage: "Cowokku yang paling ganteng, Bahagia terus yaakkk. I love u so much orang paling kiyowoooo 💖 ", // Message displayed on the love letter page
+  loveLetterMessage: "Gausah dibuka !! Sia-Sia !!! ", // Message displayed on the love letter page
 
   // 🎇 Closing Page
   closingMessage: "Every love story is beautiful, but ours is my favorite! 💖 Wishing us many more wonderful years together.", // Closing message displayed
