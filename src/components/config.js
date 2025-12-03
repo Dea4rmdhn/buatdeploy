@@ -140,7 +140,7 @@ const config = {
       { title: "Januari 31, 2025", description: "ke alun-alun untuk ketiga kalinyaaa. Makasih bunganyaa ❤️" },
       { title: "Februari 1, 2025", description: " foto bareng mbah kong yeayyyy...h-1 amas balik. Jujur sedih pas ditinggal tapi gapapa kita ketemu lagi secepatnya ya sayanggg. Thank you for always being there for me. I appreciate you more than words can say ❤️" },
       { title: "Desember 1, 2025", description: "baru" },
-       { title: "Desember 1, 2025", description: "baru sarangan" },
+      { title: "Desember 1, 2025", description: "baru sarangan" },
     ],
 
   // 💌 Love Letter Page
@@ -177,6 +177,7 @@ const config = {
 };
 
 export default config;
+
 
 
 
