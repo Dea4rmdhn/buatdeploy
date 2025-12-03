@@ -138,13 +138,13 @@ const config = {
       { title: "Januari 1, 2025", description :"anjayyyyy kedua kalinya kesini baru kesampean foto pas dah jadi pasangan wkwk" },
       { title: "Desember 28, 2024", description : "Tahun baru-an bareng keluarga. soo exciteddd. semoga tahun depan bisa kaya gini lagii" },
       { title: "Januari 31, 2025", description: "ke alun-alun untuk ketiga kalinyaaa. Makasih bunganyaa ❤️" },
-      { title: "Februari 1, 2025", description: " foto bareng mbah kong yeayyyy...h-1 amas balik. Jujur sedih pas ditinggal tapi gapapa kita ketemu lagi secepatnya ya sayanggg. Thank you for always being there for me. I appreciate you more than words can say ❤️" },
+      { title: "Februari 1, 2025", description: "h-1 amas balik. Jujur sedih pas ditinggal tapi gapapa kita ketemu lagi secepatnya ya sayanggg. Thank you for always being there for me. I appreciate you more than words can say ❤️" },
       { title: "Oktober 18, 2025", description: "Jalan-jalan ke Sarangan, Melihat bunga di tepi dermaga. Walau jarak memisahkan badan, Cinta kita tetaplah terjaga.  " },
       { title: "Desember 1, 2025", description: "kok disini ganteng yo. hmm" },
     ],
 
   // 💌 Love Letter Page
-  loveLetterMessage: "I LOVE U SAYANGKU YANG GANTENGGGGG. BAHAGIA TERUS YAKKK!!! ", // Message displayed on the love letter page
+  loveLetterMessage: "I LOVE U SAYANGKU YANG GANTENGGGGG. OJO NGAMOK TERUS, CEPET TUWEK NGKOO!!! ", // Message displayed on the love letter page
 
   // 🎇 Closing Page
   closingMessage: "Every love story is beautiful, but ours is my favorite! 💖 Wishing us many more wonderful years together.", // Closing message displayed
@@ -177,6 +177,7 @@ const config = {
 };
 
 export default config;
+
 
 
 
