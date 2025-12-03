@@ -115,7 +115,7 @@ const config = {
     // 📝 Message Recap Page
     messageTitle: "Messages for you", // Title for the messages recap page
     messageGallery: [
-      { title: "20 Februari, 2025", description: "Halo amass, tau gak sihh edek tu kangen weee, kita dah setaun gak ketemu gk sieee wkwk canda 🤣. Edek berharap amas happy terus... gabole sedih-sedih dan harus semangat terus yakk... edek bangga sama amas. Edek juga mau ingetin, jangan sampai lupa jaga kesehatan, ya. Istirahat yang cukup, makan yang teratur, kurangin ngambeknya dan kurang-kurangin ngerokoknya. Ingat ya, Amas itu berharga banget buat edek. Jadi, tolong jaga diri baik-baik, ya. Kalau ada apa-apa, jangan sungkan cerita sama edek. Edek selalu ada buat amas, no matter what . Oiyaaaaa edek ngerasa belakangan ini kita agak kurang komunikasi karena punya kesibukan masing-masing. tapi edek harap kita bisa sama-sama luangin waktu walaupun bentar buat ngobrol kaya dulu lagi. Thank you for making my life a little crazier and a lot more fun! You’re the best!💖 oiyaaa maaf klo kemaren sempet bikin kesel gara-gara web-nya gabisa dibuka, tapi edek dah usahain biar amas bisa liat, semoga amas suka 🥹. Dah itu aja, bingung mo ngomong apa lagi. I Love You dah pokoknya 💖" }, 
+      { title: "4 Desember, 2025", description: "Halo amass, update baru nichh, gimana setahun nya? cape ya? ga kerasa dah mau masuk tahun baru. Tahun baru lembaran baru gak siii harus dikurangin berantemnya ini mah. So far.. setahun ini cape dan nguras energi banget, tapi aku makin sayang sama amas. yaaa walaupun kalo lagi ngamok ngomongnya ngalor ngidul wkwk. Harapanku di akhir tahun ini, kita bisa ketemu dan ngumpul lagi kaya tahun kemaren. tapi versi bagusnya yaa, mudah mudahan akhir tahun ngga ada hal buruk yang terjadi. semoga keluarga amas dan keluargaku selalu dalam keadaan baik. aamiin. Bahagia selalu dan sampai ketemu lagi. cee yeahh I Love You  💖" }, 
       
       
     ],
@@ -176,3 +176,4 @@ const config = {
 };
 
 export default config;
+
